@@ -148,13 +148,9 @@
                     </security>
                 </datasource>
                 <datasource jndi-name="java:jboss/datasources/ApicurioDS" pool-name="ApicurioDS" enabled="true" use-java-context="true">
-                    <!-- <connection-url>jdbc:h2:${jboss.server.data.dir}/apicurio;AUTO_SERVER=FALSE</connection-url> -->
                     <connection-url>jdbc:mysql://192.168.1.120:3306/apicurio</connection-url>
-                    <!-- <driver>h2</driver> -->
-                    <driver>mysql-connector-java-8.0.20.jar</driver>
+                    <driver>mysql-connector-j-8.0.33.jar</driver>
                     <security>
-                        <!-- <user-name>sa</user-name>
-                        <password>sa</password> -->
                         <user-name>root</user-name>
                         <password>123456</password>
                     </security>
